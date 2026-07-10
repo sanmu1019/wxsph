@@ -4,6 +4,7 @@ __pycache__/
 .env.*
 !.env.example
 wxsph_cache.json
+wxsph-vps-deploy*.zip
 data/
 *.log
 .venv/
