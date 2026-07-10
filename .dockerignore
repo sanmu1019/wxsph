@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.git
+__pycache__/
+*.pyc
+*.log
+wxsph_cache.json
+data/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/

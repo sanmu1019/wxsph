@@ -1,0 +1,12 @@
+services:
+  wxsph-api:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./data:/app/data
+    environment:
+      WXSPH_CACHE_FILE: /app/data/wxsph_cache.json
