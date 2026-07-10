@@ -94,6 +94,7 @@ curl http://127.0.0.1:8787/health
 ```
 
 Docker Compose 会将缓存文件保存到 `/app/data/wxsph_cache.json`，对应宿主机项目目录下的 `data/`。
+容器端口仅绑定到 VPS 的 `127.0.0.1:8787`，不直接对公网开放；请通过 Nginx 和 HTTPS 访问服务。
 
 ## Nginx 反向代理
 
