@@ -24,7 +24,8 @@
 6. 生产环境保持 `WXSPH_DEBUG=false`。
 7. 使用 HTTPS，并通过 Nginx 或其他反向代理对外提供服务。
 8. 不要提交 `wxsph_cache.json`、`*.log` 和 `__pycache__/` 等运行文件。
-9. 如果希望他人可以复用代码，请在公开前补充 `LICENSE` 文件。
+9. 本仓库已包含 [MIT License](LICENSE)；其中使用的第三方服务和平台接口
+   仍需遵守其自身授权范围和服务规则。
 
 ## 接口
 
@@ -135,3 +136,7 @@ WXSPH_DEBUG=false
 - 默认缓存文件为 `wxsph_cache.json`。
 - Docker 部署时缓存写入 `/app/data`，避免容器重建后丢失缓存。
 - 对公网提供服务时，请始终启用 API Key、限流和 HTTPS。
+
+## 许可证
+
+本项目按 MIT License 发布，详见 [LICENSE](LICENSE)。
