@@ -18,7 +18,7 @@
 
 1. `.env` 仅保存在本机或服务器上，从 `.env.example` 复制生成，不要提交到 git。
 2. `WXSPH_COOKIE` 或 `WXSPH_COOKIES` 只能配置在服务端，不能出现在代码、README、日志或仓库提交记录中。
-3. 服务对公网开放前必须设置 `WXSPH_API_KEYS`。
+3. `WXSPH_API_KEYS` 是业务接口必需配置；未配置时 `/api/wxsph` 会拒绝请求。
 4. 建议使用 `X-API-Key` 或 `Authorization: Bearer ...` 传递密钥。`?key=...` 虽然可用，但密钥可能进入访问日志或浏览器历史记录。
 5. 仅在服务位于可信反向代理之后时设置 `WXSPH_TRUST_PROXY=true`。启用后，限流会信任 `X-Forwarded-For`。
 6. 生产环境保持 `WXSPH_DEBUG=false`。

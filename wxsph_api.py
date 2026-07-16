@@ -465,7 +465,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def authorized(self, params: dict[str, list[str]] | None = None) -> bool:
         if not API_KEYS:
-            return True
+            return False
         auth = self.headers.get("Authorization", "")
         if auth.lower().startswith("bearer "):
             token = auth[7:].strip()
